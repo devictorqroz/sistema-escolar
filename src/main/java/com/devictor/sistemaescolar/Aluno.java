@@ -1,5 +1,8 @@
 package com.devictor.sistemaescolar;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aluno {
 
     // Entidade
@@ -11,7 +14,21 @@ public class Aluno {
 
     private Email email;
 
-    
+    private List<Telefone> telefones = new ArrayList<>();
 
+    public void adicionarTelefone(String ddd, String numero) {
+        this.telefones.add(new Telefone(ddd, numero));
+    }
 
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Email getEmail() {
+        return email;
+    }
 }

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class EmailTest {
 
     @Test
-    void naoDeveriaCriarEmailsComEnderecosInvalidos() {
+    void naoDeveriaCriarEmailComEnderecoInvalido() {
         assertThrows(IllegalArgumentException.class,
                 () -> new Email(null));
         assertThrows(IllegalArgumentException.class,
@@ -16,4 +16,10 @@ class EmailTest {
                 () -> new Email("emailinvalido"));
     }
 
+    @Test
+    void deveriaPermitirCriarEmailComEnderecoValido() {
+        String endereco = "contato@email.com";
+        Email email = new Email(endereco);
+        assertEquals(endereco, email.getEndereco());
+    }
 }
