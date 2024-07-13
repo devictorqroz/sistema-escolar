@@ -1,4 +1,4 @@
-package com.devictor.sistemaescolar;
+package com.devictor.sistemaescolar.aluno;
 
 import java.util.ArrayList;
 import java.util.List;

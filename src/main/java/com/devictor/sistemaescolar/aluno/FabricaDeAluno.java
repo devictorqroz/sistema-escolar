@@ -1,4 +1,4 @@
-package com.devictor.sistemaescolar;
+package com.devictor.sistemaescolar.aluno;
 
 // Parecido com padrão Builder
 public class FabricaDeAluno {

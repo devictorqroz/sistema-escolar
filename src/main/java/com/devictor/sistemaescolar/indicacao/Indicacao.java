@@ -1,6 +1,7 @@
-package com.devictor.sistemaescolar;
+package com.devictor.sistemaescolar.indicacao;
 
-import java.time.LocalDate;
+import com.devictor.sistemaescolar.aluno.Aluno;
+
 import java.time.LocalDateTime;
 
 public class Indicacao {
